@@ -24,6 +24,9 @@ Inclua o script `whatsfloat.js` na sua página logo antes do fechamento da tag `
 </script>
 ```
 
+ > Experimente o WhatsFloat.js ao vivo! Acesse este [exemplo interativo](https://codepen.io/Tiago-Gon-alves-the-solid/pen/dyapVKL) para ver como ele funciona.
+
+
 ## ⚙️ Configurações
 
 - `phoneNumber`: Seu número de WhatsApp incluindo o código do país e sem espaços ou símbolos.
