@@ -12,7 +12,7 @@ Facilitando a interação dos seus usuários com o WhatsApp diretamente do seu s
 
 ## 📝 Como usar
 
-Inclua o script `whatsfloat.js` na sua página e inicialize-o com as configurações desejadas:
+Inclua o script `whatsfloat.js` na sua página logo antes do fechamento da tag `</body>` e inicialize-o com as configurações desejadas:
 
 ```html
 <!-- WhatsFloat.js - https://whatsfloat-js.rocket.srv.br -->
