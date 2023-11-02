@@ -56,6 +56,11 @@ Este é um projeto de **[Tihh Gonçalves](https://github.com/tihhgoncalves)**, f
 [![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/tihhgoncalves)
 [![Telegram](https://img.shields.io/badge/Telegram-26A5E4.svg?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/tihhgoncalves)
 
+## 🛠️ Suporte
+
+Para relatar bugs ou solicitar novas funcionalidades, por favor, abra uma [issue](https://github.com/tihhgoncalves/whatsfloat.js/issues) no GitHub. Sua contribuição é muito apreciada!
+
+
 ## 🚀 Releases
 
 Acompanhe as atualizações e melhorias do WhatsFloat.js.
