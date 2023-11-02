@@ -1,0 +1,32 @@
+{
+  "name": "whatsfloat",
+  "version": "1.0.0",
+  "description": "A lightweight JavaScript widget to integrate WhatsApp chat on websites.",
+  "main": "dist/whatsfloat.js",
+  "scripts": {
+    "build": "node build-script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tihhgoncalves/whatsfloat.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "chat",
+    "widget",
+    "javascript",
+    "communication"
+  ],
+  "author": "Tihh Gonçalves <tihhgoncalves@gmail.com> (https://github.com/tihhgoncalves)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tihhgoncalves/whatsfloat/issues"
+  },
+  "homepage": "https://github.com/tihhgoncalves/whatsfloat#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "private": false
+}

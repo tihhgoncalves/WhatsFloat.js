@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/tihhgoncalves/WhatsFloat.js",
+      "statusCode": 301
+    }
+  ]
+}
