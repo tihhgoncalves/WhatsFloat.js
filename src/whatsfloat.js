@@ -1,11 +1,15 @@
+const version = "%VERSION%";
+
 (function () {
+
+  console.log(' WhatsFloat.js - v' + version + ' - https://github.com/tihhgoncalves/WhatsFloat.js');
+
   // Função para inicializar o ícone do WhatsApp
   function initWhatsAppIcon(config) {
-
     // padrões do config
     var phoneNumber = config.phoneNumber || "+554799999999";
     var position = config.position || 4;
-    var zIndex = config.zIndex || '1000';
+    var zIndex = config.zIndex || "1000";
     var marginLeft = config.marginLeft || "25px";
     var marginRight = config.marginRight || "25px";
     var marginTop = config.marginTop || "25px";

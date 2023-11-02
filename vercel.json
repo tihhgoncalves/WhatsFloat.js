@@ -1,16 +1,9 @@
 {
-    "redirects": [
-      {
-        "source": "/",
-        "destination": "https://github.com/tihhgoncalves/WhatsFloat.js",
-        "statusCode": 301
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/whatsfloat.js",
-        "destination": "/public/whatsfloat.js"
-      }
-    ]
-  }
-  
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/tihhgoncalves/WhatsFloat.js",
+      "statusCode": 301
+    }
+  ]
+}
