@@ -15,16 +15,11 @@ Facilitando a interação dos seus usuários com o WhatsApp diretamente do seu s
 Inclua o script `whatsfloat.js` na sua página e inicialize-o com as configurações desejadas:
 
 ```html
+<!-- WhatsFloat.js - https://whatsfloat-js.rocket.srv.br -->
 <script src="https://whatsfloat-js.rocket.srv.br/whatsfloat.js"></script>
 <script>
   initWhatsAppIcon({
-    phoneNumber: "+5511900001111",
-    position: 4,
-    zIndex: "1000",
-    marginLeft: "25px",
-    marginRight: "25px",
-    marginTop: "25px",
-    marginBottom: "25px",
+    phoneNumber: "+5511900001111"
   });
 </script>
 ```
