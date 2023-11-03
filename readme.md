@@ -58,7 +58,12 @@ Este projeto é orgulhosamente mantido pela **[Rocket Produtora Digital](http://
 
 ## 🤝 Contribuições
 
-Contribuições são sempre bem-vindas! Sinta-se à vontade para contribuir com melhorias no código, documentação ou funcionalidades.
+Nossa liga de super coders está sempre pronta para a ação! 💥
+
+- @tihhgoncalves 🚀 (O Mestre Jedi dos códigos)
+- @Lucasfog 🌌 (O Guardião do Repositório)
+
+ > Contribuições são sempre bem-vindas! Sinta-se à vontade para contribuir com melhorias no código, documentação ou funcionalidades.
 
 ## 🧠 Autor
 
@@ -71,14 +76,6 @@ Este é um projeto de **[Tihh Gonçalves](https://github.com/tihhgoncalves)**, f
 ## 🛠️ Suporte
 
 Para relatar bugs ou solicitar novas funcionalidades, por favor, abra uma [issue](https://github.com/tihhgoncalves/whatsfloat.js/issues) no GitHub. Sua contribuição é muito apreciada!
-
-## 👩🏻‍💻 Colaboradores
-
-Nossa liga de super coders está sempre pronta para a ação! 💥
-
-- @tihhgoncalves 🚀 (O Mestre Jedi dos códigos)
-- @Lucasfog 🌌 (O Guardião do Repositório)
-
 
 ## 🚀 Releases
 
