@@ -5,13 +5,9 @@
 Facilitando a interação dos seus usuários com o WhatsApp diretamente do seu site. O WhatsFloat.js adiciona um ícone flutuante do WhatsApp na sua página web, permitindo que os visitantes iniciem uma conversa com você com apenas um clique.
 
 [![Versão mais recente](https://img.shields.io/github/release/tihhgoncalves/whatsfloat.js.svg?style=flat)]()
-
 [![Último commit](https://img.shields.io/github/last-commit/tihhgoncalves/whatsfloat.js.svg?style=flat)]()
-
 [![Downloads feitos até hoje](https://img.shields.io/github/downloads/tihhgoncalves/whatsfloat.js/total.svg?style=flat)]()
-
 [![GitHub contributors](https://img.shields.io/github/contributors/tihhgoncalves/whatsfloat.js.svg?style=flat)]()
-
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/)
 
 ## 📝 Como usar
