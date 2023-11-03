@@ -8,6 +8,7 @@ const version = "%VERSION%";
   function initWhatsAppIcon(config) {
     // padrões do config
     var phoneNumber = config.phoneNumber || "+554799999999";
+    var message = config.message;
     var position = config.position || 4;
     var zIndex = config.zIndex || "1000";
     var marginLeft = config.marginLeft || "25px";
@@ -18,7 +19,13 @@ const version = "%VERSION%";
     // Criar o link e o div para o ícone
     var whatsappLink = document.createElement("a");
     whatsappLink.id = "whatsapp.js";
-    whatsappLink.href = `https://wa.me/${phoneNumber}`;
+
+    if (message) {
+      whatsappLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    } else {
+      whatsappLink.href = `https://wa.me/${phoneNumber}`;
+    }
+    
     whatsappLink.target = "_blank";
 
     var whatsappIcon = document.createElement("div");
