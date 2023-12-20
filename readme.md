@@ -92,6 +92,11 @@ Acompanhe as atualizações e melhorias do WhatsFloat.js.
 
 > 💡 **Dica:** Para ver a lista completa de mudanças, visite a [página de releases](https://github.com/tihhgoncalves/whatsfloat.js/releases).
 
+### 1.2.0
+
+#### Novidade
+ - Implementado várias opções de estilos de ícones de CTA.
+
 ### 1.1.0
 
 #### Novidade
