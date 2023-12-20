@@ -9,6 +9,7 @@ const version = "%VERSION%";
     // padrões do config
     var phoneNumber = config.phoneNumber || "+554799999999";
     var message = config.message;
+    var style = config.style || '01';
     var position = config.position || 4;
     var zIndex = config.zIndex || "1000";
     var marginLeft = config.marginLeft || "25px";
@@ -32,7 +33,7 @@ const version = "%VERSION%";
     whatsappIcon.style.width = "50px";
     whatsappIcon.style.height = "50px";
     whatsappIcon.style.backgroundImage =
-      'url("https://static.textilnaweb.com/imgs/whatsapp_icone.png")';
+      `url("https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/master/assets/images/icon-cta-${style}.svg")`;
     whatsappIcon.style.backgroundSize = "contain";
     whatsappIcon.style.position = "fixed";
     whatsappIcon.style.cursor = "pointer";

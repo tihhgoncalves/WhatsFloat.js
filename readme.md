@@ -34,6 +34,8 @@ Inclua o script `whatsfloat.js` na sua página logo antes do fechamento da tag `
 
 - `message`: Uma mensagem pra ser pré-preenchida no WhatsApp do usuário.
 
+- `style`: Opção de estilo do ícone de Call To Action. (veja opções abaixo)
+
 - `position`: Posição do ícone na tela (1: superior esquerdo, 2: superior direito, 3: inferior esquerdo, 4: inferior direito)
 
 - `zIndex` : z-index para o ícone flutuante
@@ -47,6 +49,17 @@ Inclua o script `whatsfloat.js` na sua página logo antes do fechamento da tag `
 - `marginBottom` : Margem inferior
 
 > 💡 **Dica:** A configuração `phoneNumber` é a única obrigatória. Todas as outras são opcionais para personalizar ainda mais a sua experiência.
+
+### Estilos de CTA
+
+| Ícone  | Valor  | Decrição |
+|--------|--------|----------|
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-01.svg" width="30" />  | 01 | Estilo padrão
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-02.svg" width="30" />  | 02 | Estilo quadrado
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-03.svg" width="30" />  | 03 | Estilo somente com o ícone verde
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-04.svg" width="30" />  | 04 | Estilo do ícone verde com contorno branco
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-05.svg" width="30" />  | 05 | Estilo com o ícone em preto
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-06.svg" width="30" />  | 06 | Estilo com o ícone em branco
 
 ## 💰 Mantenedora
 
