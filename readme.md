@@ -54,12 +54,12 @@ Inclua o script `whatsfloat.js` na sua página logo antes do fechamento da tag `
 
 | Ícone  | Valor  | Decrição |
 |--------|--------|----------|
-| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-01.svg" width="30" />  | 01 | Estilo padrão
-| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-02.svg" width="30" />  | 02 | Estilo quadrado
-| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-03.svg" width="30" />  | 03 | Estilo somente com o ícone verde
-| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-04.svg" width="30" />  | 04 | Estilo do ícone verde com contorno branco
-| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-05.svg" width="30" />  | 05 | Estilo com o ícone em preto
-| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/feature/novos-estilos-de-cta/assets/images/icon-cta-06.svg" width="30" />  | 06 | Estilo com o ícone em branco
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/master/assets/images/icon-cta-01.svg" width="30" />  | 01 | Estilo padrão
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/master/assets/images/icon-cta-02.svg" width="30" />  | 02 | Estilo quadrado
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/master/assets/images/icon-cta-03.svg" width="30" />  | 03 | Estilo somente com o ícone verde
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/master/assets/images/icon-cta-04.svg" width="30" />  | 04 | Estilo do ícone verde com contorno branco
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/master/assets/images/icon-cta-05.svg" width="30" />  | 05 | Estilo com o ícone em preto
+| <img src="https://raw.githubusercontent.com/tihhgoncalves/WhatsFloat.js/master/assets/images/icon-cta-06.svg" width="30" />  | 06 | Estilo com o ícone em branco
 
 ## 💰 Mantenedora
 
