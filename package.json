@@ -23,8 +23,9 @@
     "url": "https://github.com/tihhgoncalves/whatsfloat/issues"
   },
   "homepage": "https://github.com/tihhgoncalves/whatsfloat#readme",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "terser": "^5.44.0"
+  },
   "engines": {
     "node": ">=14.0.0"
   },
