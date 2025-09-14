@@ -20,10 +20,14 @@ jobs:
     - name: 🔢 Gerar versão do WhatsFloat.js
       run: node build-script.js
 
-    - name: 📂 Sync files
+    - name: 📂 Sync only whatsfloat.js and whatsfloat.min.js
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        server-dir: whatsfloat-js.rocket.srv.br/
+        server-dir: /whatsfloat-js.rocket.srv.br/
+        local-dir: ./public/
+        include: |
+          whatsfloat.js
+          whatsfloat.min.js
