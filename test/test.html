@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teste WhatsFloat.js</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste do WhatsFloat.js</h1>
+
+    <script src="../src/whatsfloat.js"></script>
+    <script>
+      initWhatsAppIcon({
+        phoneNumber: "+554799999999",
+        message: "Oi. Vim do teste",
+        showBubble: true,
+        bubbleText: "Precisa de ajuda?",
+        style: "01",
+        position: 4,
+      });
+    </script>
+  </body>
+</html>
