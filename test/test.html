@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>Teste WhatsFloat.js</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: #f4f4f4;
+      }
+    </style>
   </head>
   <body>
     <h1>Teste do WhatsFloat.js</h1>
@@ -12,11 +20,8 @@
       initWhatsAppIcon({
         phoneNumber: "+554799999999",
         message: "Oi. Vim do teste",
-        style: "03",
-        position: 4,
-        zIndex: "9999",
-        marginRight: "20px",
-        marginBottom: "20px",
+        showBubble: true,
+        bubbleText: "Precisa de ajuda?"
       });
     </script>
   </body>
