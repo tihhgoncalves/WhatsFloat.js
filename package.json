@@ -1,6 +1,6 @@
 {
   "name": "whatsfloat",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A lightweight JavaScript widget to integrate WhatsApp chat on websites.",
   "main": "dist/whatsfloat.js",
   "scripts": {
