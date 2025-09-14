@@ -11,7 +11,6 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
     
-
     - name: 📦 Instalar dependências npm
       run: npm install
 
