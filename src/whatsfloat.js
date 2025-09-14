@@ -95,8 +95,10 @@ const version = "%VERSION%";
       bubble.style.marginLeft = bubbleStyle.marginLeft || "0";
       bubble.style.boxShadow = bubbleStyle.boxShadow || "0 1px 4px rgba(0,0,0,0.2)";
       bubble.style.verticalAlign = "middle";
-      bubble.style.opacity = bubbleStyle.opacity || "1";
-      bubble.style.transition = "opacity 0.3s";
+  bubble.style.opacity = "0";
+  bubble.style.transform = "translateY(10px) scale(0.98)";
+  bubble.style.transition = "opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1)";
+  // Para animar a seta junto, criaremos referência depois
       bubble.style.position = "relative";
       bubble.style.maxWidth = "220px";
       bubble.style.overflow = "hidden";
@@ -123,6 +125,11 @@ const version = "%VERSION%";
         arrow.style.marginRight = "0";
         arrow.style.pointerEvents = "none";
 
+        // Estado inicial da seta igual ao do balão
+        arrow.style.opacity = "0";
+        arrow.style.transform = "translateY(10px) scale(0.98)";
+        arrow.style.transition = "opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1)";
+
         wrapper.appendChild(whatsappIcon);
         wrapper.appendChild(arrow);
         wrapper.appendChild(bubble);
@@ -131,6 +138,13 @@ const version = "%VERSION%";
         whatsappIcon.style.order = "1";
         bubble.style.order = "3";
         arrow.style.order = "2";
+
+        setTimeout(function() {
+          bubble.style.opacity = bubbleStyle.opacity || "1";
+          bubble.style.transform = "translateY(0) scale(1)";
+          arrow.style.opacity = bubbleStyle.opacity || "1";
+          arrow.style.transform = "translateY(0) scale(1)";
+        }, bubbleStyle.delay || 3000);
       } else {
         // Ícone na direita, balão à esquerda (padrão)
         arrow.style.position = "relative";
@@ -144,6 +158,11 @@ const version = "%VERSION%";
         arrow.style.marginRight = "12px";
         arrow.style.pointerEvents = "none";
         arrow.style.order = "2";
+        // Estado inicial da seta igual ao do balão
+        arrow.style.opacity = "0";
+        arrow.style.transform = "translateY(10px) scale(0.98)";
+        arrow.style.transition = "opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1)";
+
         wrapper.appendChild(bubble);
         wrapper.appendChild(arrow);
         wrapper.appendChild(whatsappIcon);
@@ -152,6 +171,13 @@ const version = "%VERSION%";
         whatsappIcon.style.order = "3";
         bubble.style.order = "1";
         arrow.style.order = "2";
+
+        setTimeout(function() {
+          bubble.style.opacity = bubbleStyle.opacity || "1";
+          bubble.style.transform = "translateY(0) scale(1)";
+          arrow.style.opacity = bubbleStyle.opacity || "1";
+          arrow.style.transform = "translateY(0) scale(1)";
+        }, bubbleStyle.delay || 3000);
       }
     }
 
