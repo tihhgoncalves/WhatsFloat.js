@@ -1,6 +1,6 @@
 {
   "name": "whatsfloat",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "A lightweight JavaScript widget to integrate WhatsApp chat on websites.",
   "main": "dist/whatsfloat.js",
   "scripts": {
@@ -23,8 +23,9 @@
     "url": "https://github.com/tihhgoncalves/whatsfloat/issues"
   },
   "homepage": "https://github.com/tihhgoncalves/whatsfloat#readme",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "terser": "^5.44.0"
+  },
   "engines": {
     "node": ">=14.0.0"
   },

@@ -15,16 +15,35 @@ jobs:
     - name: 📦 Instalar dependências npm
       run: npm install
 
-    - name: 🛠️ Gerar arquivos SASS (build)
-      run: npm run build
-
     - name: 🔢 Gerar versão do WhatsFloat.js
       run: node build-script.js
 
-    - name: 📂 Sync files
+    - name: 📂 Sync arquivos do public na raiz do FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         server-dir: whatsfloat-js.rocket.srv.br/
+        local-dir: ./public/
+        include: |
+          *
+        exclude: |
+          **/node_modules/**
+          **/.git*/**
+          **/.vscode/**
+
+    - name: 📂 Sync pasta assets
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_user }}
+        password: ${{ secrets.ftp_password }}
+        server-dir: whatsfloat-js.rocket.srv.br/assets/
+        local-dir: ./assets/
+        include: |
+          **
+        exclude: |
+          **/node_modules/**
+          **/.git*/**
+          **/.vscode/**

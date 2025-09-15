@@ -25,18 +25,10 @@ const version = "%VERSION%";
     var bubbleText = config.bubbleText || "Estamos online";
     var bubbleStyle = config.bubbleStyle || {};
 
-    // Criar o link e o div para o ícone
-    var whatsappLink = document.createElement("a");
-    whatsappLink.id = "whatsapp.js";
-
-    if (message) {
-      whatsappLink.href = `https://wa.me/${sanitizedPhone}?text=${encodeURIComponent(
-        message
-      )}`;
-    } else {
-      whatsappLink.href = `https://wa.me/${sanitizedPhone}`;
-    }
-    whatsappLink.target = "_blank";
+    // Monta a URL do WhatsApp
+    var whatsappUrl = message
+      ? `https://wa.me/${sanitizedPhone}?text=${encodeURIComponent(message)}`
+      : `https://wa.me/${sanitizedPhone}`;
 
     var wrapper = document.createElement("div");
     wrapper.style.position = "fixed";
@@ -45,7 +37,6 @@ const version = "%VERSION%";
     wrapper.style.height = "60px";
     wrapper.style.display = "flex";
     wrapper.style.alignItems = "center";
-    wrapper.style.pointerEvents = "none";
 
     // Definir a posição baseada na configuração
     switch (position) {
@@ -95,10 +86,10 @@ const version = "%VERSION%";
       bubble.style.marginLeft = bubbleStyle.marginLeft || "0";
       bubble.style.boxShadow = bubbleStyle.boxShadow || "0 1px 4px rgba(0,0,0,0.2)";
       bubble.style.verticalAlign = "middle";
-  bubble.style.opacity = "0";
-  bubble.style.transform = "translateY(10px) scale(0.98)";
-  bubble.style.transition = "opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1)";
-  // Para animar a seta junto, criaremos referência depois
+      bubble.style.opacity = "0";
+      bubble.style.transform = "translateY(10px) scale(0.98)";
+      bubble.style.transition = "opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1)";
+      // Para animar a seta junto, criaremos referência depois
       bubble.style.position = "relative";
       bubble.style.maxWidth = "220px";
       bubble.style.overflow = "hidden";
@@ -107,6 +98,7 @@ const version = "%VERSION%";
       bubble.className = "whatsfloat-bubble";
       bubble.style.position = "relative";
       bubble.style.pointerEvents = "auto";
+      bubble.style.cursor = "pointer";
 
       var arrow = document.createElement("span");
       arrow.style.zIndex = 999;
@@ -139,7 +131,7 @@ const version = "%VERSION%";
         bubble.style.order = "3";
         arrow.style.order = "2";
 
-        setTimeout(function() {
+        setTimeout(function () {
           bubble.style.opacity = bubbleStyle.opacity || "1";
           bubble.style.transform = "translateY(0) scale(1)";
           arrow.style.opacity = bubbleStyle.opacity || "1";
@@ -172,7 +164,7 @@ const version = "%VERSION%";
         bubble.style.order = "1";
         arrow.style.order = "2";
 
-        setTimeout(function() {
+        setTimeout(function () {
           bubble.style.opacity = bubbleStyle.opacity || "1";
           bubble.style.transform = "translateY(0) scale(1)";
           arrow.style.opacity = bubbleStyle.opacity || "1";
@@ -181,12 +173,25 @@ const version = "%VERSION%";
       }
     }
 
-    wrapper.appendChild(whatsappIcon);
-    whatsappLink.appendChild(wrapper);
-    // Permitir clique apenas no link
-    wrapper.style.pointerEvents = "none";
-    whatsappLink.style.pointerEvents = "auto";
-    document.body.appendChild(whatsappLink);
+    // Adiciona evento de clique ao ícone
+    whatsappIcon.addEventListener("click", function (e) {
+      window.open(whatsappUrl, "_blank");
+    });
+    whatsappIcon.tabIndex = 0;
+    whatsappIcon.setAttribute("role", "button");
+    whatsappIcon.setAttribute("aria-label", "Abrir WhatsApp");
+
+    // Se houver balão, também adiciona evento de clique
+    if (showBubble && typeof bubble !== "undefined") {
+      bubble.addEventListener("click", function (e) {
+        window.open(whatsappUrl, "_blank");
+      });
+      bubble.tabIndex = 0;
+      bubble.setAttribute("role", "button");
+      bubble.setAttribute("aria-label", "Abrir WhatsApp");
+    }
+
+    document.body.appendChild(wrapper);
   }
 
   // Expõe a função initWhatsAppIcon globalmente
