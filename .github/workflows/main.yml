@@ -24,7 +24,7 @@ jobs:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        server-dir: whatsfloat-js.rocket.srv.br/
+        server-dir: public_html/whatsfloat-js/
         local-dir: ./public/
         include: |
           *
